@@ -1,6 +1,56 @@
 <!DOCTYPE html>
 <html>
+	<head>
+		<title>Joy of Painting Importer</title>
+		<link rel="stylesheet" href="styles.css">
+	</head>
 	<body>
-		<p>test</p>
+		<p class="title">Joy of Painting Importer</h1>
+		<p class="subtitle">Unofficial image importer for the <a target="_blank" href="https://www.curseforge.com/minecraft/mc-mods/joy-of-painting">Joy of Painting</a> Minecraft mod</p>
+		<div class="main">
+			<p class="header">Upload image</p>
+			<div class="preview">
+				<div id="imagebutton"></div>
+				<canvas id="imagecanvas">
+					<img src="blank.png">
+				</canvas>
+				<input style="display:none" type="file" accept="image/*" id="imageupload">
+			</div>
+			<br>
+
+			<p class="header">Canvas size</p>
+			<div class="canvasselect">
+				<option class="canvasoption selected" value=0><img src="small.png"></option>
+				<option class="canvasoption" value=1><img src="large.png"></option>
+				<option class="canvasoption" value=2><img src="wide.png"></option>
+				<option class="canvasoption" value=3><img src="tall.png"></option>
+			</div>
+			<br>
+
+			<button>Download Painting</button>
+			<br>
+
+			<br>
+			<div class="instructions">
+				<p class="header">Instructions</p>
+				<ol>
+					<li>Upload an image and then choose a canvas size</li>
+					<li>Press download and save your .paint file to "%appdata%/.minecraft/paintings"
+						<ul>
+							<li>If a "paintings" folder doesn't exist in ".minecraft" then create one yourself</li>
+							<li>If you have changed the install location of your Minecraft then the folder you need to save this file in will change</li>
+							<li>To easily find this folder, if you are unsure, open resource packs in-game and press the "Open Resource Packs Folder" button. Go back one folder and you should be able to make/open your "paintings" folder</li>
+						</ul>
+					</li>
+					<li>Go in-game and hold a full palette in your off-hand and a new canvas of the right size in your main-hand
+						<ul>
+							<li>This must be a newly crafted canvas, you cannot take an existing canvas and paint it white</li>
+						</ul>
+					</li>
+					<li>Type the command "/paintimport name" where name is the name of the file you saved (minus the .paint part)</li>
+				</ol>
+			</div>
+		</div>
+		<script src="script.js"></script>
 	</body>
 </html>
