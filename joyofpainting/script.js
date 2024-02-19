@@ -1,14 +1,14 @@
 // Global vars
 var canvas = document.getElementById("imagecanvas");
+canvas.width = 32;
+canvas.height = 32;
 var canvasCtx = canvas.getContext("2d");
-var canvasSize = 2;
+var canvasSize = 0;
 
 // Default canvas image
-let img = new Image();
+var img = new Image();
 img.onload = function() {
-	canvas.width = 16;
-	canvas.height = 16;
-	canvasCtx.drawImage(img, 0, 0, canvas.width, canvas.height);
+	drawImgToCanvas();
 }
 img.src = "blank.png";
 
@@ -20,13 +20,9 @@ function uploadFile() {
 
 	let fileReader = new FileReader();
 	fileReader.onload = function() {
-		let img = new Image();
+		img = new Image();
 		img.onload = function() {
-			canvas.width = 16;
-			canvas.height = 16;
-			if (canvasSize == 1 || canvas == 2) canvas.width = 32;
-			if (canvasSize == 1 || canvas == 3) canvas.height = 32;
-			canvasCtx.drawImage(img, 0, 0, canvas.width, canvas.height);
+			drawImgToCanvas()
 		}
 		img.src = fileReader.result;
 	}
@@ -44,7 +40,32 @@ for (let i = 0; i < canvasOptions.length; i++) {
 		canvasSize = canvasOptions[i].value;
 
 		// Update canvas
-		if (!canvas) return;
-		console.log(canvas.toDataURL());
+		if (img.src.includes("blank.png")) return;
+		drawImgToCanvas()
 	});
+}
+
+function drawImgToCanvas() {
+	canvas.width = 32;
+	canvas.height = 32;
+	let x1 = 0;
+	let y1 = 0;
+	let x2 = 32;
+	let y2 = 32;
+	if (canvasSize == 0) {
+		canvas.width = 16;
+		canvas.height = 16;
+		x2 = 16;
+		y2 = 16;
+	}
+	else if (canvasSize == 2) {
+		y1 = 8;
+		y2 = 16;
+	}
+	else if (canvasSize == 3) {
+		x1 = 8;
+		x2 = 16;
+	}
+	canvasCtx.clearRect(0, 0, canvas.width, canvas.height);
+	canvasCtx.drawImage(img, x1, y1, x2, y2);
 }
