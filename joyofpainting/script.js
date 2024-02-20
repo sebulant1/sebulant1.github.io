@@ -69,3 +69,7 @@ function drawImgToCanvas() {
 	canvasCtx.clearRect(0, 0, canvas.width, canvas.height);
 	canvasCtx.drawImage(img, x1, y1, x2, y2);
 }
+
+document.getElementById("test").addEventListener("change", function() {
+	nbt.parseUncompressed(this.files[0]);
+});

@@ -11,9 +11,7 @@
 			<p class="header">Upload image</p>
 			<div class="preview">
 				<div id="imagebutton"></div>
-				<canvas id="imagecanvas">
-					<img src="blank.png">
-				</canvas>
+				<canvas id="imagecanvas"></canvas>
 				<input style="display:none" type="file" accept="image/*" id="imageupload">
 			</div>
 			<br>
@@ -27,7 +25,7 @@
 			</div>
 			<br>
 
-			<button>Download Painting</button>
+			<button id="downloadnbt">Download Painting</button>
 			<br>
 
 			<br>
@@ -39,7 +37,7 @@
 						<ul>
 							<li>If a "paintings" folder doesn't exist in ".minecraft" then create one yourself</li>
 							<li>If you have changed the install location of your Minecraft then the folder you need to save this file in will change</li>
-							<li>To easily find this folder, if you are unsure, open resource packs in-game and press the "Open Resource Packs Folder" button. Go back one folder and you should be able to make/open your "paintings" folder</li>
+							<li>To easily find this folder, if you are unsure, open resource packs in-game and press the "Open Resource Packs Folder" button. Go back one folder and you should be able to make/open your "paintings" folder there</li>
 						</ul>
 					</li>
 					<li>Go in-game and hold a full palette in your off-hand and a new canvas of the right size in your main-hand
@@ -50,7 +48,14 @@
 					<li>Type the command "/paintimport name" where name is the name of the file you saved (minus the .paint part)</li>
 				</ol>
 			</div>
+
+			<br>
+			<p class="header" style="margin-bottom:-15px">Created by sebulant</p>
 		</div>
+
+		<input type="file" id="test">
+
+		<script src="nbt.js"></script>
 		<script src="script.js"></script>
 	</body>
 </html>
