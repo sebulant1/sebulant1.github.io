@@ -29,10 +29,10 @@ p.subtitle {
 p.subtitle a {
 	color: #aaa;
 }
-p.header {
+p.header, p.header a {
 	font-size: 12px;
 	font-style: italic;
-	color: #aaa;
+	color: #aaa !important;
 	margin: 0px 0px 5px 0px;
 }
 
@@ -55,7 +55,7 @@ div.preview {
 	margin-left: auto;
 	margin-right: auto;
 	border-radius: 3px;
-	image-rendering: crisp-edges;
+	image-rendering: pixelated;
 	box-shadow: 2px 2px 8px #0006;
 	cursor: pointer;
 	position: relative;
@@ -71,6 +71,7 @@ div#imagebutton {
 	height: 100%;
 	background-color: #fff0;
 	border-radius: inherit;
+	transition: background-color .1s;
 }
 div#imagebutton:hover {
 	background-color: #fff3;
@@ -90,22 +91,23 @@ div.canvasselect {
 	align-items: center;
 	box-shadow: 2px 2px 8px #0006;
 }
-option.canvasoption {
+div.canvasoption {
 	height: 64px;
 	padding: 8px;
 	margin: 5px;
 	border-radius: 4px;
 	background-color: #484848;
 	cursor: pointer;
+	transition: background-color .1s;
 }
-option.canvasoption.selected, option.canvasoption:hover {
+div.canvasoption.selected, div.canvasoption:hover {
 	background-color: #585858;
 }
-option.canvasoption.selected:hover {
+div.canvasoption.selected:hover {
 	background-color: #686868;
 }
-option.canvasoption img {
-	image-rendering: crisp-edges;
+div.canvasoption img {
+	image-rendering: pixelated;
 	width: 64px;
 	height: 64px;
 }

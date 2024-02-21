@@ -18,13 +18,14 @@
 
 			<p class="header">Canvas size</p>
 			<div class="canvasselect">
-				<option class="canvasoption selected" value=0><img src="small.png"></option>
-				<option class="canvasoption" value=1><img src="large.png"></option>
-				<option class="canvasoption" value=2><img src="wide.png"></option>
-				<option class="canvasoption" value=3><img src="tall.png"></option>
+				<div class="canvasoption selected" value=0><img src="small.png" alt="Small 1x1"></div>
+				<div class="canvasoption" value=1><img src="large.png" alt="Large 2x2"></div>
+				<div class="canvasoption" value=2><img src="wide.png" alt="Wide 2x1"></div>
+				<div class="canvasoption" value=3><img src="tall.png" alt="Tall 1x2"></div>
 			</div>
 			<br>
 
+			<p class="header">Download (NOT CURRENTLY FUNCTIONAL)</p>
 			<button id="downloadnbt">Download Painting</button>
 			<br>
 
@@ -50,10 +51,12 @@
 			</div>
 
 			<br>
-			<p class="header" style="margin-bottom:-15px">Created by sebulant</p>
+			<p class="header" style="margin-bottom:-15px">
+				Created by <a href="../">sebulant</a>
+			</p>
 		</div>
 
-		<input type="file" id="test">
+		<input type="file" id="test" style="display:none;">
 
 		<script src="nbt.js"></script>
 		<script src="script.js"></script>
