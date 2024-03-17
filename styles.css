@@ -105,6 +105,19 @@ img {
 	width: 100%;
 }
 
+p.aboutme {
+	float: left;
+	width: 100%;
+	margin-bottom: 0px;
+}
+.aboutme img {
+	height: 100px;
+	width: auto;
+	display: block;
+	float: right;
+	margin-left: 16px;
+}
+
 div.popupbg {
 	position: fixed;
 	width: 100%;
@@ -134,4 +147,6 @@ ul ul li {
 
 hr {
 	color: #fff;
+	margin-top: 16px;
+	margin-bottom: 16px;
 }
