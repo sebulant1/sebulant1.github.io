@@ -2,26 +2,29 @@
 <html>
 	<head>
 		<title>Newgrounds Site Skin Customiser</title>
-		<link rel="stylesheet" href="../styles.css">
-		<link rel="icon" type="image/x-icon" href="../favicon.ico">
+		<link rel="stylesheet" href="/styles.css">
+		<link rel="icon" type="image/x-icon" href="/favicon.ico">
 	</head>
 	<body>
 		<div class="container">
 			<div class="header">
-				<a href="../">
-					<img src="../logo.png">
+				<a href="/">
+					<img src="/logo.png">
 				</a>
 			</div>
 			<div class="navbar">
-				<a href="../">Home</a><br>
-				<a href="../joyofpainting">Joy of Painting</a><br>
-				<a href="../ngsiteskin">NG Site Skin</a>
+				<a href="/">Home</a><br>
+				<a href="/about">About Me</a><br>
+				<a href="/art">Art Gallery</a><br>
+				<a href="">NG Site Skin</a><br>
+				<a href="/joyofpainting">Joy of Painting</a><br>
 			</div>
 			<div class="content">
 				<p class="title">Newgrounds Site Skin Customiser</p>
 				<p>NGSS is a userscript which lets you change the look of Newgrounds to whatever you want. You can choose backgrounds from a list of previously used site skins or upload your own. You can also customise other parts of the site too.</p>
-				<p style="font-weight: bold;">Currently this script isn't public yet. The extension is still missing a few things and also has a couple bugs I want to fix. Also, a site background changer will eventually be a supporter-only feature on the site, so I'm hesitant to have this thing be public <a href="permission.png">(Tom did give me permission to share regardless though)</a>.</p>
-				<p style="font-weight: bold;">If you want early access, make a site skin, put it on the art portal, then send it to me. I will then give you a download link and also include the skin as a built-in option if you want. Put effort into it though, if you shit out something that took you like 10 minutes I won't include it.</p>
+				<p style="font-weight: bold;">Currently this script isn't public yet. The extension is still missing a few things and still has a couple bugs I want to fix. Also, a site background changer will eventually be a supporter-only feature on the site, so I'm hesitant to have this thing be public <a id="permission">(Tom did give me permission to share regardless though)</a></p>
+				<p style="font-weight: bold;">If you want early access, make a site skin, put it on the art portal, then send it to me. I will then give you a download link and also include the skin as a built-in option if you want. Put effort into it though, if you shit out something that took you like 10 minutes I won't include it. Not an artist? <a href="https://newgrounds.com/pm/send/sebulant">Message me</a>, we can work something out.</p>
+				<p style="font-weight: bold;"><a href="template.png">Here's a template to get you started.</a></p>
 				<b>Features:</b>
 				<ul>
 					<li>Changeable background image</li>
@@ -84,9 +87,12 @@
 					</ul>
 				</ul>
 				<hr>
-				<p>This script is made to work with Firefox, but it will work with other browsers too. That being said, if you find any bugs please let me know and I'll try and fix them :)</p>
+				<p>This script is only tested using Firefox, but should still work fine on other browsers. That being said, if you find any bugs please let me know and I'll try and fix them :)</p>
 			</div>
 		</div>
-		<script src="../script.js"></script>
+		<script src="/script.js"></script>
+		<script>
+			document.getElementById("permission").addEventListener("click", function() { imagePopup("permission.png"); });
+		</script>
 	</body>
 </html>
