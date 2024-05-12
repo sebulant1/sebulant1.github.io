@@ -1,0 +1,152 @@
+body {
+    font-family: Arial, sans-serif;
+	background-color: #102;
+	background-image: url("razsquare.png");
+	background-position: bottom 10px right 10px;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+  	background-size: 600px 600px;
+	color: #fff;
+}
+
+div.container {
+	max-width: 1000px;
+	margin: auto;
+	border: solid #fff 2px;
+	border-radius: 10px;
+	box-shadow: 10px 7px 10px #0006;
+}
+div.header {
+	background-color: #100018;
+	padding: 10px;
+	border-bottom: solid #fff 2px;
+	border-radius: 8px 8px 0px 0px;
+	text-align: center;
+}
+div.navbar {
+	float: left;
+	padding: 15px;
+	width: 120px;
+	height: 100%;
+	border-radius: 0px 0px 0px 8px;
+	background-image: linear-gradient(#204, #102);
+}
+div.content {
+	padding: 15px;
+	margin-left: 150px;
+	border-left: solid #fff 2px;
+	border-radius: 0px 0px 8px 0px;
+	background-color: #1E063Abb;
+}
+
+div.header p {
+	font-size: 32px;
+	font-weight: 800;
+	margin: 5px 0px 5px 10px;
+}
+div.header img {
+	height: 120px;
+	width: auto !important;
+	drop-shadow: 0px 0px 30px #fff;
+	transition: drop-shadow 1s;
+}
+div.header img:hover {
+	drop-shadow: 0px 0px 60px #fff;
+}
+li img {
+	max-height: 100px;
+	width: auto;
+}
+
+p, ul, a {
+	font-size: 16px;
+	color: #ccc;
+}
+p.title {
+	color: #fff;
+	font-size: 40px;
+	font-weight: 800;
+	margin: 0px;
+}
+p.imgcaption {
+	font-style: italic;
+	margin-top: 0px;
+}
+
+a {
+	color:#fff;
+	transition:color .2s;
+	cursor: pointer;
+	text-decoration: underline;
+}
+a:hover {
+	color:#bbb;
+}
+.navbar a.selected {
+	font-weight: bold;
+}
+
+div.error {
+    left: 0;
+    line-height: 200px;
+    margin-top: -100px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 100%;
+}
+div.error a {
+	font-size: 20em;
+	font-weight: 800;
+	text-decoration: none;
+}
+
+img {
+	width: 100%;
+}
+
+p.aboutme {
+	float: left;
+	width: 100%;
+	margin-bottom: 0px;
+}
+.aboutme img {
+	height: 100px;
+	width: auto;
+	display: block;
+	float: right;
+	margin-left: 16px;
+}
+
+div.popupbg {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	background-color: #000c;
+	margin: auto;
+    display: flex;
+    align-items: center;
+}
+img.popupimg {
+    margin-left: 5%;
+    max-width: 90%;
+    max-height: 90%;
+}
+img.clickimg {
+	cursor: pointer;
+}
+
+ul li {
+	margin-top: 2px;
+}
+ul ul li {
+	margin-top: 0px;
+}
+
+hr {
+	color: #fff;
+	margin-top: 16px;
+	margin-bottom: 16px;
+}

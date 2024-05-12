@@ -1,0 +1,135 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+	color: #fff;
+	background-color: #181818;
+}
+
+div.main {
+	background-color: #282828;
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	border: 2px solid #111;
+	border-radius: 4px;
+	box-shadow: 2px 2px 8px #0006;
+	padding: 30px 20px;
+}
+
+p.title {
+	font-size: 32px;
+	font-weight: 800;
+	margin-bottom: 0px;
+}
+p.subtitle {
+	font-size: 16px;
+	font-style: italic;
+	margin-top: 0px;
+}
+p.subtitle a {
+	color: #aaa;
+}
+p.header, p.header a {
+	font-size: 12px;
+	font-style: italic;
+	color: #aaa !important;
+	margin: 0px 0px 5px 0px;
+}
+
+button, select {
+	border: 2px solid #555;
+	border-radius: 2px;
+	background: linear-gradient(to bottom, #aaa 20%, #888 80%);
+	font-size: 15px;
+	font-weight: bold;
+	color: #fff;
+	padding: 2px 5px;
+}
+button:hover, select:hover {
+	background: linear-gradient(to bottom, #666 20%, #777 80%);
+}
+
+div.preview {
+	width: 320px;
+	height: 320px;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 3px;
+	image-rendering: pixelated;
+	box-shadow: 2px 2px 8px #0006;
+	cursor: pointer;
+	position: relative;
+}
+canvas#imagecanvas {
+	width: 100%;
+	height: 100%;
+	border-radius: inherit;
+}
+div#imagebutton {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: #fff0;
+	border-radius: inherit;
+	transition: background-color .1s;
+}
+div#imagebutton:hover {
+	background-color: #fff3;
+}
+
+div.canvasselect {
+	width: fit-content;
+	height: fit-content;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 8px;
+	border-radius: 4px;
+	background-color: #383838;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 2px 2px 8px #0006;
+}
+div.canvasoption {
+	height: 64px;
+	padding: 8px;
+	margin: 5px;
+	border-radius: 4px;
+	background-color: #484848;
+	cursor: pointer;
+	transition: background-color .1s;
+}
+div.canvasoption.selected, div.canvasoption:hover {
+	background-color: #585858;
+}
+div.canvasoption.selected:hover {
+	background-color: #686868;
+}
+div.canvasoption img {
+	image-rendering: pixelated;
+	width: 64px;
+	height: 64px;
+}
+
+div.instructions {
+	text-align: left;
+	background-color: #383838;
+	max-width: 950px;
+	margin-left: auto;
+	margin-right: auto;
+	border: 2px solid #222;
+	border-radius: 4px;
+	box-shadow: 2px 2px 8px #0006;
+	padding: 20px;
+}
+li {
+	margin-top: 8px;
+}
+li ul li {
+	font-size: 14px;
+	margin-top: 5px;
+}
+div.instructions ol {
+	margin: 0px;
+}

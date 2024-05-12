@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Newgrounds Site Skin Customiser</title>
+		<link rel="stylesheet" href="/styles.css">
+		<link rel="icon" type="image/x-icon" href="/favicon.ico">
+	</head>
+	<body>
+		<div class="container">
+			<div class="header">
+				<a href="/">
+					<img src="/logo.png">
+				</a>
+			</div>
+			<div class="navbar">
+				<a href="/">Home</a><br>
+				<a href="/art">Art Gallery</a><br>
+				<a href="">NG Site Skin</a><br>
+				<a href="/joyofpainting">Joy of Painting</a><br>
+			</div>
+			<div class="content">
+				<p class="title">Newgrounds Site Skin Customiser</p>
+				<p>NGSS is a userscript which lets you change the look of Newgrounds to whatever you want. You can choose backgrounds from a list of previously used site skins or upload your own. You can also customise other parts of the site too.</p>
+				<p>If you have made a site skin in the past and want it included/removed from the script. Message me and I'll sort that out for you.</p>
+				<b>Main features:</b>
+				<ul>
+					<li>Changeable background image</li>
+					<li>Changeable text and icon colour theme</li>
+					<li>Transparent background</li>
+					<li>Presets that can be imported/exported</li>
+					<li>Custom CSS</li>
+					<li>More features that are listed at the bottom of the page</li>
+				</ul>
+				<hr>
+				<b>Download:</b>
+				<p>There is no public download link for this script.</p>
+				<p>Site skin changing is due to be a supporter only feature at some point in the future. As it's meant to be paid for, I have mixed feelings about making this a free download. So despite being given <a id="permission">permission from Tom</a>, I will not be publicly giving this away.</p>
+				<p>I will still give out download links though. If you make a site skin, put it on the art portal, and send it to me, I will give you the latest version of the script. Your skill level doesn't matter, just actually put some effort into it. If you'd like I can also include the skin you made as a built-in option for others to choose too.</p>
+				<p><a href="template.png">Here's a template to get started.</a></p>
+				<p>If you're not an artist, message me anyway, we can figure something out.</p>
+				<hr>
+				<b>Installation:</b>
+				<ul>
+					<li>Install the extension Tampermonkey (or any other compatible userscript extension)</li>
+					<li>Press the download link sent to you to install the script. Tampermonkey should pop-up to prompt you to install</li>
+					<li>Click your profile picture in the top right of Newgrounds and go to "Site Skin Settings"</li>
+				</ul>
+				<hr>
+				<b>Examples:</b>
+				<img class="clickimg" src="example1.png">
+				<p class="imgcaption">Background art by <a href="https://metraberryy.newgrounds.com/">@Metraberryy</a></p>
+				<img class="clickimg" src="example4.png">
+				<p class="imgcaption">Background art by <a href="https://anasabdin.newgrounds.com/">@AnasAbdin</a></p>
+				<img class="clickimg" src="example2.png">
+				<p class="imgcaption">Background art by <a href="https://gris9.newgrounds.com/">@GRIS9</a></p>
+				<img class="clickimg" src="example3.png">
+				<p class="imgcaption">Background art by <a href="https://shamfoo.newgrounds.com/">@Shamfoo</a></p>
+				<hr>
+				<b>Full feature list:</b>
+				<ul>
+					<li>Changeable site background:</li>
+					<ul>
+						<li>Choose background from list of old site skins (and unofficial skins if enabled in settings)</li>
+						<li>Enter URL to an image to use as a background</li>
+						<li>Upload an image from your PC to upload as a background</li>
+						<li>You can also change the fade colour at the bottom of the page</li>
+						<li>Backgrounds that don't fit the site can be automatically rescaled</li>
+						<li>Pixel art backgrounds can have anti-aliasing disabled</li>
+						<li>Supports animated images too</li>
+					</ul>
+					<li>Changeable text and icon colours</li>
+					<ul>
+						<li>You can choose between the options that you would normally have when changing your profile's colour scheme</li>
+						<li>You can also set your own custom colour too</li>
+						<li>There is a "random" option which will change the colour every time you load a new page</li>
+					</ul>
+					<li>Adjustable background opacity</li>
+					<li>Custom presets</li>
+					<ul>
+						<li>You can create a preset containing your current background, colour theme, opacity, fade colour and more</li>
+						<li>Makes it easy to swap between custom site skins</li>
+						<li>You can have your currently selected preset change over set periods of time</li>
+						<li>Presets can be exported and imported, so you can share them with others</li>
+					</ul>
+					<li>Reset your currently chosen site skin whenever the sites default skin updates</li>
+					<li>Option to write custom CSS</li>
+					<li>Advanced settings</li>
+					<ul>
+						<li>Direct editing of hex values that control the sites colour theme</li>
+						<li>Enable unoffical/community made site skins in the skin selection dropdown</li>
+						<li>Importing/exporting of all chosen settings. Useful if you use multiple browsers/devices</li>
+					</ul>
+				</ul>
+				<hr>
+				<b>Changelog (not all changes are documented but it's good enough):</b>
+				<ul>v4.0 (Work in progress)
+					<li>Site skin settings given its own unique URL. It is no longer under account settings</li>
+					<li>Added a field to add custom CSS</li>
+					<li>Performance improvements to opacity slider when realtime updates are turned on</li>
+					<li>Planned:</li>
+					<ul>
+						<li>Auto-updates</li>
+						<li>Fixed custom timings on preset cycling</li>
+						<li>Better preset manager</li>
+						<ul>
+							<li>Reorder presets</li>
+							<li>Rename presets</li>
+							<li>Likely won't be done in this update, but can still be previewed <a href="https://www.newgrounds.com/skin/presets">here</a>. Use with caution.
+						</ul>
+					</ul>
+				</ul>
+				<ul>v3.3.3 (01/05/24)
+					<li>Added FNF WeekEnd 1 skin</li>
+				</ul>
+				<ul>v3.3.2 (15/03/24)
+					<li>Added Spring 2024 skin</li>
+				</ul>
+				<ul>v3.3.1 (24/02/24)
+					<li>Custom preset cycling time can now be set in advanced settings</li>
+				</ul>
+				<ul>v3.3 (21/02/24)
+					<li>Added preset cycling. Changes between presets between every x amount of time when on</li>
+					<li>Made this webpage for the script</li>
+				</ul>
+				<ul>v3.2.4 (23/01/24)
+					<li>Added Pixel Day 2024 skin</li>
+				</ul>
+				<ul>v3.2.3 (09/01/24)
+					<li>Fixed background opacity not working properly in the collabinator</li>
+				</ul>
+				<ul>v3.2.2 (03/01/24)
+					<li>Added option to add some unofficial backgrounds to the site background dropdown</li>
+					<li>Dropdown backgrounds now specify if they should resize the background when equipped</li>
+					<li>Added unofficial skins: Aalasteir, MOHD5aqer and Vaporeon Vaporeon Vaporeon</li>
+				</ul>
+				<ul>v3.2.1 (03/01/24)
+					<li>Added Winter 2024 skin</li>
+				</ul>
+				<ul>v3.2 (30/12/23)
+					<li>Added preset export/importing</li>
+					<li>Presets can now be exported as a single .json or in a .zip containing a .json for each preset</li>
+					<li>Presets can now be imported using the mentioned files, with options for overwriting and replacing existing presets</li>
+					<li>Fixed presets not updating background fade colour if the preset didn;t have a custom fade colour assigned</li>
+				</ul>
+				<ul>v3.1 (27/12/23)
+					<li>Removed the "no refresh" setting. The site no longer refreshes when changing site skin options</li>
+					<li>Fixed all previous issues that came with the "no refresh" setting</li>
+					<li>Fixed colour themes not applying to search autocomplete and the advanced search gear icon</li>
+					<li>"Fixed" parts of colour theme sometimes not appearing (i just apply the colour theme for a second time when the page loads lol)</li>
+					<li>Other insignificant code changes</li>
+				</ul>
+				<ul>v3.0 (17/12/23)
+					<li>Rewrite major parts of the script for readability and reasons below</li>
+					<li>Custom skins now load BEFORE the the main page does, meaning the default skin should no longer briefly appear</li>
+					<li>Site now refreshes when the default skin resets and the user wants to reset their skin when this happens. Before it just didn't load the custom skin, but this is no longer possible due to the rewrite</li>
+					<li>Presets now save background image scaling options</li>
+					<li>Added option to disable anti-aliasing so rescaling pixel art backgrounds doesn't make them blurry (off by default)</li>
+					<li>Added Christmas 2023 skin</li>
+					<li>Fixed file upload backgrounds not updating properly when being applied on the settings page</li>
+				</ul>
+				<ul>v2.1 (29/11/23)
+					<li>Added option to resive background images so they properly fit the site</li>
+				</ul>
+				<ul>v2.0.2 (28/11/23)
+					<li>Reverting the auto-update change that didn't work lol</li>
+				</ul>
+				<ul>v2.0.1 (28/11/23)
+					<li>Added experimental light mode under advanced settings. Will likely never finish this as it isn't compatible with anything besides background skins and just looks bad.</li>
+					<li>Attempt to make auto-updating work</li>
+				</ul>
+				<ul>v2.0 (25/11/23)
+					<li>Completely revamped the settings page</li>
+					<li>Added advanced settings. Allows for directly changing theme values and other miscellaneous settings.</li>
+					<li>Added British colour spelling option</li>
+					<li>Added option to make the opacity slider update in real time</li>
+					<li>Added option to remove all currently saved settings/data</li>
+					<li>Fixed settings not appearing on "https://www.newgrounds.com/account#" (with the # at the end)</li>
+					<li>Fixed popups being completely transparent</li>
+					<li>Fixed site backgrounds sometimes not scaling height properly</li>
+				</ul>
+				<ul>v1.4.1 (01/11/23)
+					<li>Added Alien Hominid HD skin</li>
+				</ul>
+				<ul>v1.4 (13/09/23)
+					<li>Site backgrounds can now be uploaded directly from files instead of just via URLs. Loads slower but is more convenient</li>
+					<li>Custom theme colours can now be chosen instead of just the original profile page themes</li>
+					<li>Added the ability to create site skin presets which load both a skin, theme and background opacity</li>
+					<li>Given everything in settings a hover text</li>
+					<li>Added Madness Day 2023 skin</li>
+				</ul>
+				<ul>v1.3 (22/08/23)
+					<li>Added the ability to change the site opacity</li>
+					<li>Added wall artist credit next to the dropdown box on the settings page</li>
+					<li>Fixed ETMA ratings on submissions being affected by colour themes</li>
+					<li>Added Boxcar City RUSH, Everything by Everyone, Newgrounds Audio Deathmatch 2019, Piconjo Day 2021, Robot Day 2023 and 4 more Madness Day 2021 skins</li>
+				</ul>
+				<ul>v1.2.2 (18/08/23)
+					<li>Fixed some more places not showing custom colour themes</li>
+				</ul>
+				<ul>v1.2.1 (18/08/23)
+					<li>Fixed some places not showing custom colour themes</li>
+				</ul>
+				<ul>v1.2 (17/08/23)
+					<li>Added the option to change the link/icon colours of the site too (themes)</li>
+				</ul>
+				<ul>v1.1 (15/08/23)
+					<li>Made the site background scale with the image height</li>
+					<li>Dropdown box in account settings remembers your choice when re-visiting the page</li>
+					<li>Added the option to reset the site skin when the default one is updated (on be default)</li>
+					<li>Added New Years 2023, mleth and TSIOQUE skin</li>
+				</ul>
+				<ul>v1.0.1 (15/08/23)
+					<li>Added Clock Day 2023 skin</li>
+				</ul>
+				<ul>v1.0 (14/08/23)
+					<li>Site background can now be changed to any image URL</li>
+					<li>URL can be set from a dropdown or from text input in the account settings page</li>
+				</ul>
+				<hr>
+				<p>This script is only tested using Firefox, but should still work fine on other browsers. That being said, if you find any bugs please let me know and I'll try and fix them :)</p>
+			</div>
+		</div>
+		<script src="/script.js"></script>
+		<script>
+			document.getElementById("permission").addEventListener("click", function() { imagePopup("permission.png"); });
+		</script>
+	</body>
+</html>
