@@ -25,7 +25,7 @@
 				<b>Main features:</b>
 				<ul>
 					<li>Changeable background image</li>
-					<li>Changeable text and icon colour theme</li>
+					<li>Changeable text, icon and header colours</li>
 					<li>Transparent background</li>
 					<li>Presets that can be imported/exported</li>
 					<li>Custom CSS</li>
@@ -70,8 +70,9 @@
 						<li>Pixel art backgrounds can have anti-aliasing disabled</li>
 						<li>Supports animated images too</li>
 					</ul>
-					<li>Changeable text and icon colours</li>
+					<li>Changeable colour themes</li>
 					<ul>
+						<li>Change the colour of the site's links, icons and headers</li>
 						<li>You can choose between the options that you would normally have when changing your profile's colour scheme</li>
 						<li>You can also set your own custom colour too</li>
 						<li>There is a "random" option which will change the colour every time you load a new page</li>
@@ -79,7 +80,7 @@
 					<li>Adjustable background opacity</li>
 					<li>Custom presets</li>
 					<ul>
-						<li>You can create a preset containing your current background, colour theme, opacity, fade colour and more</li>
+						<li>You can create a preset containing your currently equipped site skin</li>
 						<li>Makes it easy to swap between custom site skins</li>
 						<li>You can have your currently selected preset change over set periods of time</li>
 						<li>Presets can be exported and imported, so you can share them with others</li>
@@ -94,20 +95,39 @@
 					</ul>
 				</ul>
 				<hr>
-				<b>Changelog (not all changes are documented but it's good enough):</b>
+				<b>Changelog:</b>
+				<ul>v4.2.1 (Work in progress)
+					<li>Fixed header colour not being updated when changed in advanced settings</li>
+				</ul>
+				<ul>v4.2.0 (25/10/24)
+					<li>Added header colour customisation, with full functionality like link/icon colours (themes)</li>
+					<li>Added buttons to every art portal entry that will set the current art piece as the site background</li>
+					<li>Link/icon colour number 4 now uses more default values to make it more in line with site's default look</li>
+					<li>Added crash warning to "Fill Boxes" in advanced settings if a file upload background is currently selected</li>
+					<li>Fixed a bug with checkboxes on report forms when background opacity was reduced</li>
+					<li>Fixed link/icon colour number 1 not loading when applied from a preset</li>
+					<li>Fixed the "no site skin reset" option not working</li>
+				</ul>
+				<ul>v4.1 (19/08/24)
+					<li>Backgrounds are now loaded from a remote source, so updating the script is no longer required to get new skins</li>
+					<li>Added update notifications on the notification bar and skin settings page</li>
+					<li>Update notifications can be toggled off in advanced settings</li>
+					<li>Added a "?" button next to the background dropdown that will randomly select a background</li>
+					<li>Removed realtime opacity setting as it is now on by default</li>
+					<li>Removed "hover" field from themes as it is no longer used</li>
+				</ul>
 				<ul>v4.0 (12/08/24)
 					<li>Site skin settings given its own unique URL. It is no longer under account settings</li>
-					<li>Moved the toggle for unofficial skins to the main settings list</li>
-					<li>Added a button to select a random preset</li>
-					<li>Added a box to write custom CSS (like userstyles)</li>
-					<li>Added 4 new skins: Deltarune Collab, Transformers Collab, Toriyama Tribute and Creamjuicer69 skin</li>
+					<li>Moved the link to the site skin settings onto the notification bar</li>
+					<li>Added a field to add custom CSS</li>
+					<li>Added a "?" button next to the preset dropdown that will randomly select a preset</li>
+					<li>Reworked popup menus for saving/deleting presets</li>
 					<li>Added automatic updates</li>
-					<li>Added a link to the site skin settings page on the notifications bar</li>
-					<li>Added new popups for preset saving/deleting</li>
+					<li>Improvements to how CSS styles are loaded</li>
+					<li>Moved the toggle for unofficial skins to main settings list</li>
+					<li>Added Deltarune Collab skin, Transformers Collab, Toriyama Tribute and Creamjuicer69 skin</li>
+					<li>Fixed the audio player at the bottom of every page not being affected by colour themes</li>
 					<li>Fixed custom preset cycle timing not working</li>
-					<li>Fixed the audio player at the bottom of the page not displaying themes</li>
-					<li>Fixed the background fade colour box in advanced settings not clearing when it should</li>
-					<li>Behind the scenes improvements to how CSS styles are loaded</li>
 				</ul>
 				<ul>v3.3.3 (01/05/24)
 					<li>Added FNF WeekEnd 1 skin</li>
